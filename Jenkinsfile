@@ -5,9 +5,10 @@ node {
     stage("System tests") {
         // sh 'rm -rf /var/jenkins_home/workspace/${JOB_NAME}/*'
         // git /*your-github-repo*/
-        // sh '''
-        // cd TechEd-2020
-        // '''
+        sh '''
+        pwd
+        ls
+        '''
         
         // Setup the environment to start the application with CAP server
         // and execute UiVeri5 system tests
