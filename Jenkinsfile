@@ -5,7 +5,7 @@ node {
     stage("System tests") {
         sh '''
         pwd
-        ls
+        ls -la
         '''        
         // Setup the environment to start the application with CAP server
         // and execute UiVeri5 system tests
