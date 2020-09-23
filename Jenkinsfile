@@ -3,10 +3,10 @@
 
 node {
     stage("System tests") {
-        sh ```
+        sh '''
         pwd
         ls
-        ```        
+        '''        
         // Setup the environment to start the application with CAP server
         // and execute UiVeri5 system tests
         uiVeri5ExecuteTests script: this,
