@@ -2,7 +2,11 @@
 @Library(['piper-lib-os']) _
 
 node {
-    stage("System tests") {        
+    stage("System tests") {
+        sh ```
+        pwd
+        ls
+        ```        
         // Setup the environment to start the application with CAP server
         // and execute UiVeri5 system tests
         uiVeri5ExecuteTests script: this,
