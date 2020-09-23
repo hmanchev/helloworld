@@ -3,6 +3,7 @@
 
 node {
     stage("System tests") {
+        git scm.userRemoteConfigs[0].url
         sh '''
         pwd
         ls -la
